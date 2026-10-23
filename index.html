@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solvèra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+   <!-- SECTION 1: HERO / BAGIAN AWAL (Compact & Professional) -->
+<section id="home" class="hero-compact">
+    <div class="hero-container">
+        
+        <!-- Sisi Kiri: Teks & Tagline Utama -->
+        <div class="hero-text-content">
+            <span class="hero-badge">Inovasi Student Company</span>
+            <h1>Mengubah Limbah Menjadi <span class="highlight-text">Eco-Fashion</span> Berkelas</h1>
+            <p class="hero-desc">
+    Solvèra hadir dengan solusi ramah lingkungan, memadukan kreativitas dan konsep <i>circular economy</i> untuk mengubah limbah menjadi produk fungsional bernilai jual tinggi.
+            </p>
+            
+            <!-- Tombol Aksi Cepat (CTA Buttons) -->
+            <div class="hero-btn-group">
+                <a href="#produk" class="btn-primary">Lihat Koleksi Produk</a>
+                <a href="#latar-belakang" class="btn-secondary">Kenali Solvèra</a>
+            </div>
+        </div>
+
+        <!-- Sisi Kanan: Kartu Preview / Visual Unggulan -->
+        <div class="hero-visual-card">
+            <div class="preview-card-box">
+                <img src="image/produk1.jpg" alt="Produk Unggulan Solvèra" class="hero-preview-img">
+                <div class="preview-badge-floating">
+                    <span>🌱 100% Eco-Friendly</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+   <!-- NAVIGATOR / NAVBAR -->
+<header class="header" id="navbar">
+    <a href="#home" class="brand-container">
+    <img src="image/solvera.png" alt="Logo Solvèra" class="logo-img" id="logoImg">
+    <span class="logo-text">SOLVÈRA</span>
+   </a>
+
+    <!-- CONTAINER KANAN (IKON KERANJANG & HAMBURGER) -->
+    <div class="nav-right-controls">
+        <!-- Perhatikan class diubah menjadi cart-icon-wrapper -->
+        <div class="cart-icon-wrapper" id="cartBtn">
+            <img src="image/cart-icon.png" alt="Keranjang" class="cart-icon-img">
+            <span class="cart-badge" id="cartCount">0</span>
+        </div>
+
+        <!-- Tombol Garis Tiga (Hamburger) -->
+        <button class="menu-toggle hambar" id="menuToggle" aria-label="Buka Menu">
+            <span class="hambar-line"></span>
+            <span class="hambar-line"></span>
+            <span class="hambar-line"></span>
+        </button>
+    </div>
+
+
+    <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+            <li><a href="#latar-belakang" class="nav-item">Tentang kami</a></li>
+            <li><a href="#produk" class="nav-item">Produk</a></li>
+            <li><a href="#grafik-penjualan" class="nav-item">Grafik Penjualan</a></li>
+            <li><a href="#tim-direksi" class="nav-item">Tim & Direksi</a></li>
+        </ul>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+</header>
+
+   <!-- SECTION 2: TENTANG SOLVERA & VISI MISI -->
+<section id="latar-belakang" class="section bg-grey">
+    <div class="container">
+        
+        <!-- BAGIAN ATAS: Apa itu Solvèra (Align Center) -->
+        <div class="about-header-center">
+            <h2>Tentang Solvèra</h2>
+            <h3 class="about-subtitle">Apa itu Solvèra?</h3>
+            <p class="about-desc">
+                Solvèra adalah perusahaan inovatif yang bergerak di bidang pengolahan limbah ramah lingkungan, mengubah bahan sisa menjadi produk bernilai tinggi yang elegan dan fungsional.
+            </p>
+        </div>
+
+        <!-- BAGIAN BAWAH: Visi Misi (Kiri) & Kelebihan Perusahaan (Kanan/Kartu) -->
+        <div class="solvera-content-grid">
+            
+            <!-- Sisi Kiri: Visi & Misi Berhierarki -->
+            <div class="vision-mission-box">
+                <h3 class="vm-main-title">Visi & Misi Solvèra</h3>
+                
+                <div class="vm-block">
+                    <h4 class="vm-sub-title">Visi</h4>
+                    <p class="vm-text">Menjadi pelopor *eco-fashion* terdepan yang mengintegrasikan keberlanjutan lingkungan dan gaya hidup modern.</p>
+                </div>
+
+                <div class="vm-block">
+                    <h4 class="vm-sub-title">Misi</h4>
+                    
+                    <div class="mission-item">
+                        <span class="mission-heading">1. Inovasi & Pengolahan Limbah:</span>
+                        <p class="mission-desc">Mengolah limbah batok kelapa menjadi produk eco-fashion fungsional bernilai jual tinggi melalui konsep upcycling dan circular economy.</p>
+                    </div>
+
+                    <!-- Kamu bisa tambah poin misi lainnya di sini dengan struktur yang sama -->
+                </div>
+            </div>
+
+            <!-- Sisi Kanan: Kartu Kelebihan Perusahaan (Unique Selling Point) -->
+            <div class="features-cards-container">
+                
+                <!-- Kartu Kelebihan 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <!-- Masukkan foto/logo icon kamu nanti di folder image dengan nama icon1.png -->
+                        <img src="image/icon1.png" alt="Logo Natural Material" class="feature-icon">
+                    </div>
+                    <h4 class="feature-card-title">Natural Material</h4>
+                    <p class="feature-card-desc">Memadukan keindahan material alam premium untuk tampilan yang elegan dan berkelas.</p>
+                </div>
+
+                <!-- Kartu Kelebihan 2 (Bisa ditambah jika butuh) -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <img src="image/icon2.png" alt="Logo Circular Economy" class="feature-icon">
+                    </div>
+                    <h4 class="feature-card-title">Circular Economy</h4>
+                    <p class="feature-card-desc">Mendukung siklus produksi berkelanjutan yang minim limbah demi masa depan bumi.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3: PRODUK UTAMA -->
+<section id="produk" class="section bg-light-green">
+    <div class="container">
+        <div class="section-title-group">
+            <h2>Koleksi Produk Unggulan</h2>
+            <p class="section-subtitle">Temukan produk eco-fashion berkualitas tinggi buatan Solvèra.</p>
+        </div>
+
+        <div class="product-horizontal-grid">
+            
+            <!-- Produk 1 -->
+            <div class="product-card-horizontal" data-id="p1" data-name="Solvèra Eco-Tote Bag" data-price="85000" data-img="image/produk1.jpg">
+                
+                <!-- BAGIAN 1: Foto di Kiri -->
+                <div class="product-card-left" onclick="window.location.href='product.html?id=p1'">
+                    <img src="image/produk1.jpg" alt="Solvèra Eco-Tote Bag" class="product-horizontal-img">
+                    <span class="product-badge-holo">Terlaris</span>
+                </div>
+
+                <!-- BAGIAN 2: Rating, Nama, Deskripsi, Harga, & Teks Selengkapnya -->
+                <div class="product-card-middle">
+                    <div class="product-rating" onclick="window.location.href='product.html?id=p1'">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="rating-number">(5.0)</span>
+                    </div>
+                    <h3 class="product-title-horizontal" onclick="window.location.href='product.html?id=p1'">Solvèra Eco-Tote Bag</h3>
+                    <p class="product-short-desc">Tas ramah lingkungan dari bahan daur ulang pilihan dengan kapasitas luas.</p>
+                    
+                    <!-- Tambahan Teks "Selengkapnya" Warna Merah & Tidak Bold -->
+                    <a href="product.html?id=p1" class="product-read-more">Selengkapnya</a>
+
+                    <p class="product-price-horizontal">Rp 85.000</p>
+                </div>
+
+                <!-- BAGIAN 3: Tombol Aksi Samping (Gaya Lama yang Harmonis) -->
+                <div class="product-card-right">
+                    <div class="product-card-actions-horizontal">
+                        <button class="btn-cart-secondary btn-add-only">
+                            <i class="fa-solid fa-cart-plus"></i> + Keranjang
+                        </button>
+                        <button class="btn-buy-primary btn-buy-now">
+                            Beli
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="product-card-horizontal" data-id="p2" data-name="Solvèra Coconut Wallet" data-price="65000" data-img="image/produk2.jpg">
+                
+                <!-- BAGIAN 1 -->
+                <div class="product-card-left" onclick="window.location.href='product.html?id=p2'">
+                    <img src="image/produk2.jpg" alt="Solvèra Coconut Wallet" class="product-horizontal-img">
+                    <span class="product-badge-holo">Baru</span>
+                </div>
+
+                <!-- BAGIAN 2 -->
+                <div class="product-card-middle">
+                    <div class="product-rating" onclick="window.location.href='product.html?id=p2'">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span class="rating-number">(4.8)</span>
+                    </div>
+                    <h3 class="product-title-horizontal" onclick="window.location.href='product.html?id=p2'">Solvèra Coconut Wallet</h3>
+                    <p class="product-short-desc">Dompet minimalis unik berbahan limbah tempurung kelapa yang kuat.</p>
+                    
+                    <!-- Tambahan Teks "Selengkapnya" -->
+                    <a href="product.html?id=p2" class="product-read-more">Selengkapnya</a>
+
+                    <p class="product-price-horizontal">Rp 65.000</p>
+                </div>
+
+                <!-- BAGIAN 3 -->
+                <div class="product-card-right">
+                    <div class="product-card-actions-horizontal">
+                        <button class="btn-cart-secondary btn-add-only">
+                            <i class="fa-solid fa-cart-plus"></i> + Keranjang
+                        </button>
+                        <button class="btn-buy-primary btn-buy-now">
+                            Beli
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- POP-UP KERANJANG BELANJA (DENGAN PILIHAN TIPE / VARIAN) -->
+<div class="cart-modal-overlay" id="cartModal">
+    <div class="cart-modal">
+        <div class="cart-modal-header">
+            <h3>Keranjang Belanja Anda</h3>
+            <button class="close-cart-btn" id="closeCart">&times;</button>
+        </div>
+        
+        <!-- Container Item Keranjang -->
+        <div class="cart-items-list" id="cartItems">
+            <p class="cart-empty-text">Keranjang masih kosong.</p>
+        </div>
+
+        <!-- Footer Total & Checkout -->
+        <div class="cart-modal-footer">
+            <div class="cart-total-row">
+                <span>Total Perkiraan:</span>
+                <strong id="cartTotalPrice">Rp 0</strong>
+            </div>
+            <button class="btn-checkout" id="checkoutBtn">Lanjut ke Checkout</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- SECTION 4: GRAFIK PENJUALAN INTERAKTIF (Hologram Theme) -->
+<section id="grafik-penjualan" class="section bg-hologram-dark">
+    <div class="container">
+        
+        <!-- Judul & Subtitle Profesional (Kontras Tinggi & Hierarki) -->
+        <div class="chart-title-group">
+            <h2 class="chart-main-title">Catatan Omset & Pertumbuhan Penjualan Solvèra</h2>
+            <p class="chart-subtitle">Visualisasi pergerakan omset dan pertumbuhan volume penjualan produk Solvèra periode Januari hingga Mei.</p>
+        </div>
+
+        <div class="chart-header-holo">
+    <!-- Sisi Kiri: Omset Tertinggi & Rata-Rata -->
+    <div class="chart-stats-left">
+        <div class="stat-item">
+            <span class="stat-label">Omset Tertinggi</span>
+            <span class="stat-value-holo highlight-neon" id="statMax">Rp 12.500.000</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Rata-Rata / Bulan</span>
+            <span class="stat-value-holo" id="statAvg">Rp 8.200.000</span>
+        </div>
+    </div>
+
+    <!-- Sisi Kanan Atas: Terakhir Diubah -->
+    <div class="chart-update-right">
+        <span class="stat-label">Terakhir Diubah</span>
+        <span class="stat-value-update">Mei 2026</span>
+    </div>
+</div>
+
+            <!-- Area Batang Grafik -->
+            <div class="chart-wrapper">
+                <div class="chart-bars-container-holo">
+                    
+                    <!-- Garis Grid Hologram Tipis -->
+                    <div class="chart-grid-lines">
+                        <div class="grid-line-holo"></div>
+                        <div class="grid-line-holo"></div>
+                        <div class="grid-line-holo"></div>
+                    </div>
+
+                    <!-- Bagian di dalam .chart-bars-container-holo -->
+                    <div class="chart-bar-group">
+                        <div class="bar-holo" style="--height: 45%;" data-month="Januari" data-value="Rp 5.200.000">
+                            <!-- Angka langsung tampil di atas batang -->
+                            <span class="bar-top-value">5.2 Jt</span>
+                            <div class="chart-tooltip">Januari: Rp 5.200.000</div>
+                        </div>
+                        <span class="bar-label-holo">Jan</span>
+                    </div>
+                    
+                    <div class="chart-bar-group">
+                        <div class="bar-holo" style="--height: 60%;" data-month="Februari" data-value="Rp 7.500.000">
+                            <span class="bar-top-value">7.5 Jt</span>
+                            <div class="chart-tooltip">Februari: Rp 7.500.000</div>
+                        </div>
+                        <span class="bar-label-holo">Feb</span>
+                    </div>
+                    
+                    <div class="chart-bar-group">
+                        <div class="bar-holo" style="--height: 80%;" data-month="Maret" data-value="Rp 9.800.000">
+                            <span class="bar-top-value">9.8 Jt</span>
+                            <div class="chart-tooltip">Maret: Rp 9.800.000</div>
+                        </div>
+                        <span class="bar-label-holo">Mar</span>
+                    </div>
+                    
+                    <div class="chart-bar-group">
+                        <div class="bar-holo" style="--height: 65%;" data-month="April" data-value="Rp 8.000.000">
+                            <span class="bar-top-value">8.0 Jt</span>
+                            <div class="chart-tooltip">April: Rp 8.000.000</div>
+                        </div>
+                        <span class="bar-label-holo">Apr</span>
+                    </div>
+                    
+                    <div class="chart-bar-group">
+                        <div class="bar-holo" style="--height: 100%;" data-month="Mei" data-value="Rp 12.500.000">
+                            <span class="bar-top-value">12.5 Jt</span>
+                            <div class="chart-tooltip">Mei: Rp 12.500.000</div>
+                        </div>
+                        <span class="bar-label-holo">Mei</span>
+                    </div>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </section>
+
+<!-- SECTION 5: TIM / DIREKSI (Warna Abu-Abu) -->
+    <section id="tim-direksi" class="section bg-grey">
+        <div class="container">
+            <h2>Struktur Organisasi & Direksi</h2>
+            <p>Lorem ipsum</p>
+
+            <!-- Grid Kartu Tim -->
+            <div class="team-grid">
+
+                <!-- 1. CEO -->
+                <div class="team-card">
+                    <div class="team-img-box">
+                        <img src="ceo.jpg" alt="Foto CEO" class="team-img">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Nama CEO</h3>
+                        <p class="team-position">Chief Executive Officer (CEO)</p>
+                    </div>
+                </div>
+
+                <!-- 2. Sekretaris -->
+                <div class="team-card">
+                    <div class="team-img-box">
+                        <img src="sekretaris.jpg" alt="Foto Sekretaris" class="team-img">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Nama Sekretaris</h3>
+                        <p class="team-position">Secretary</p>
+                    </div>
+                </div>
+
+                <!-- 3. HRD -->
+                <div class="team-card">
+                    <div class="team-img-box">
+                        <img src="hrd.jpg" alt="Foto HRD" class="team-img">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Nama HRD</h3>
+                        <p class="team-position">Director of HRD</p>
+                    </div>
+                </div>
+
+                <!-- 4. Marketing -->
+                <div class="team-card">
+                    <div class="team-img-box">
+                        <img src="marketing.jpg" alt="Foto Marketing" class="team-img">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Nama Marketing</h3>
+                        <p class="team-position">Director of Marketing</p>
+                    </div>
+                </div>
+
+                <!-- 5. Sales -->
+                <div class="team-card">
+                    <div class="team-img-box">
+                        <img src="sales.jpg" alt="Foto Sales" class="team-img">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Nama Sales</h3>
+                        <p class="team-position">Director of Sales</p>
+                    </div>
+                </div>
+
+                <!-- 6. PR -->
+                <div class="team-card">
+                    <div class="team-img-box">
+                        <img src="pr.jpg" alt="Foto PR" class="team-img">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Nama PR</h3>
+                        <p class="team-position">Public Relations (PR)</p>
+                    </div>
+                </div>
+
+                <!-- 7. Production -->
+                <div class="team-card">
+                    <div class="team-img-box">
+                        <img src="production.jpg" alt="Foto Production" class="team-img">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Nama Produksi</h3>
+                        <p class="team-position">Director of Production</p>
+                    </div>
+                </div>
+
+                <!-- 8. Finance -->
+                <div class="team-card">
+                    <div class="team-img-box">
+                        <img src="finance.jpg" alt="Foto Finance" class="team-img">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Nama Finance</h3>
+                        <p class="team-position">Director of Finance</p>
+                    </div>
+                </div>
+
+            </div> <!-- /team-grid -->
+        </div>
+    </section>
+
+    <!-- FOOTER UTAMA (4 BAGIAN) -->
+<footer class="footer">
+    <div class="footer-container">
+        
+        <!-- BAGIAN 1: LOGO, NAMA BRAND (HIERARKI) & DESKRIPSI SINGKAT -->
+        <div class="footer-col footer-about">
+            <div class="footer-brand">
+                <img src="image/solvera.png" alt="Logo Solvèra" class="footer-logo">
+                <div class="footer-brand-text">
+                    <h3>SOLVÈRA</h3>
+                    <span>Student Company</span>
+                </div>
+            </div>
+            <p class="footer-desc">
+                Solvèra menghadirkan produk inovatif eco-fashion berbahan dasar limbah ramah lingkungan demi masa depan bumi yang berkelanjutan.
+            </p>
+        </div>
+
+        <!-- BAGIAN 2: CONTACT US (ALAMAT, TELEPON, EMAIL) -->
+        <div class="footer-col footer-contact">
+            <h4>Contact Us</h4>
+            <ul class="contact-list">
+                <li>
+                    <i class="fa-solid fa-location-dot contact-icon"></i>
+                    <span>Jl. A.H. Nasution No. 27, Kelurahan Pasir Endah, Kecamatan Ujungberung, Kota Bandung, Jawa Barat 40619</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone contact-icon"></i>
+                    <span>+62 812-3456-7890</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope contact-icon"></i>
+                    <span>scsolvera@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- BAGIAN 3: FOLLOW US (SOSIAL MEDIA BULET DENGAN EFEK BERCAHAYA) -->
+        <div class="footer-col footer-social">
+            <h4>Follow Us</h4>
+            <p class="social-text">Dapatkan info & update produk terbaru kami di media sosial:</p>
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="YouTube" class="social-btn youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Instagram" class="social-btn instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="TikTok" class="social-btn tiktok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- HAK CIPTA BAWAH -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 Solvèra Student Company. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

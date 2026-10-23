@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Solvèra</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body class="checkout-body">
+
+    <div class="checkout-container">
+        <h2>Konfirmasi Pesanan Solvèra</h2>
+        
+        <!-- Ringkasan Barang yang Dibeli -->
+        <div class="checkout-section">
+            <h3>Rincian Belanjaan</h3>
+            <div id="checkoutItemsList"></div>
+            <div class="checkout-total-row">
+                <strong>Total Pembayaran:</strong>
+                <span id="checkoutTotalPrice">Rp 0</span>
+            </div>
+        </div>
+
+        <!-- Form Data Pembeli & Pengiriman -->
+        <div class="checkout-section">
+            <h3>Data Pengiriman</h3>
+            
+            <div class="form-group">
+                <label for="buyerName">Nama Penerima:</label>
+                <input type="text" id="buyerName" placeholder="Masukkan nama lengkap kamu">
+            </div>
+
+            <div class="form-group">
+                <label>Metode Pengambilan:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="shippingMethod" value="Ambil di Dupat" checked> Ambil di Dupat</label>
+                    <label><input type="radio" name="shippingMethod" value="Diantar ke Rumah"> Diantar ke Rumah</label>
+                </div>
+            </div>
+
+            <!-- Input Alamat (Hanya muncul jika "Diantar ke Rumah" dipilih) -->
+            <div class="form-group" id="addressGroup" style="display: none;">
+                <label for="buyerAddress">Alamat Lengkap:</label>
+                <textarea id="buyerAddress" placeholder="Masukkan jalan, nomor rumah, patokan, dll"></textarea>
+            </div>
+        </div>
+
+        <!-- Tombol Kirim ke WhatsApp -->
+        <button class="btn-whatsapp" id="sendWhatsAppBtn">Kirim Pesanan ke WhatsApp 📱</button>
+        <a href="index.html" class="back-link">← Kembali ke Beranda</a>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

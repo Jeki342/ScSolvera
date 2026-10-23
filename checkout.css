@@ -1,0 +1,129 @@
+/* ==========================================
+   STYLING HALAMAN CHECKOUT
+   ========================================== */
+.checkout-body {
+    background-color: var(--bg-grey);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.checkout-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-container h2 {
+    color: var(--bg-header);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.checkout-section {
+    background: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.checkout-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.checkout-item-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.checkout-total-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+    color: var(--text-dark);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.form-group input[type="text"], 
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input[type="text"]:focus, 
+.form-group textarea:focus {
+    border-color: var(--bg-header);
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.btn-whatsapp {
+    background-color: #25d366; /* Warna hijau khas WhatsApp */
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebc57;
+}
+
+.back-link {
+    text-align: center;
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: var(--bg-header);
+}
