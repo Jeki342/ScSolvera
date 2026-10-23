@@ -2,7 +2,7 @@
 // CONFIGURATION & CONSTANTS
 // ==========================================
 // Nomor WhatsApp Perusahaan Solvèra
-const COMPANY_WHATSAPP = "6281234567890"; 
+const COMPANY_WHATSAPP = "6285659766900"; 
 
 // Opsi Pilihan Tipe / Varian Produk
 const DEFAULT_VARIANTS = ["Biru", "Abu-abu", "Merah", "Kuning", "Hitam"];
