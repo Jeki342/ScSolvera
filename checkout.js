@@ -86,7 +86,7 @@ sendWhatsAppBtn.addEventListener('click', () => {
     const message = `Halo kak, saya *${name}* ingin membeli produk berikut:${productDetailsText}\n\nTotal Harga: *Rp ${totalPrice.toLocaleString('id-ID')}*\n${shippingInfoText}\n\nMohon konfirmasinya ya kak. Terima kasih!`;
 
     // Nomor WhatsApp Perusahaan Solvèra
-    const companyWhatsAppNumber = '6281234567890'; 
+    const companyWhatsAppNumber = '6285659766900'; 
 
     // Encode teks agar aman dibaca URL browser
     const encodedMessage = encodeURIComponent(message);
